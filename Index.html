@@ -2,17 +2,28 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!---Linking Pages Start-->
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="assets/Images/Logo.png">
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/stylesheet.css">
+  <script src="assets/js/java.js"></script>
+  <script src="https://kit.fontawesome.com/99d3ff8338.js" crossorigin="anonymous"></script>
+  <!---Linking Pages End-->
+
+  <!---Title-Header Start-->
   <title>Hyper Web</title>
+  <!---Title-Header End-->
 </head>
 
 <body>
-  <h2>Hyper Web</h2>
+  <canvas class="snow" id="snow" width="1848" height="515"> </canvas>
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Navbar</a>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark ps-3 fs-5">
+    <a class="navbar-brand fs-2 ps-2 fw-bold" href="Index.html"><span class="hyper-text">Hyper</span> Web</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -21,33 +32,23 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="Index.html">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="#">Products</a>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            Dropdown
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled" href="#">Disabled</a>
+          <a class="nav-link" href="#">About us</a>
+        </li>
+        <li class="nav-item float-end">
+          <a class="nav-link" href="#">Contact</a>
         </li>
       </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
     </div>
   </nav>
+
+  <h2 class="text-center text-light pt-4 fw-bold"><span class="hyper-text">Hyper</span><span class="web-text"> Web</span></h2>
 
 </body>
 
