@@ -1,6 +1,6 @@
 body {
     background: rgb(0, 21, 57);
-    background: linear-gradient(0deg, rgba(0, 21, 57, 1) 0%, rgba(1, 0, 28, 1) 100%);
+    background: linear-gradient(0deg, rgb(27, 27, 27) 0%, rgb(15, 15, 15) 100%);
     position: relative;
     overflow-x: hidden;
     font-family: 'DM Sans', sans-serif;
@@ -211,5 +211,18 @@ h2 {
 }
 
 .viden-text {
+    color: #FFFFFF
+}
+
+.text-title {
     color: red;
+}
+
+.icon-image {
+    height: 50px;
+    width: 50px;
+}
+
+.beregner-title {
+    color: rgb(0, 102, 255)
 }

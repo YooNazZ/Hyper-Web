@@ -84,6 +84,7 @@ function beregnMuskelmasse() {
 
 	c = a * b * 17;
 	document.getElementById("cer").innerHTML = c + " Kg.";
+	
 }
 
 function beregnFedtfri() {
