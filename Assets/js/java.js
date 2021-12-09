@@ -48,14 +48,12 @@
 		obj.y += obj.vy;
 		if (obj.x > canvas.width + (maxDist / 2)) {
 			obj.x = -(maxDist / 2);
-		}
-		else if (obj.xpos < -(maxDist / 2)) {
+		} else if (obj.xpos < -(maxDist / 2)) {
 			obj.x = canvas.width + (maxDist / 2);
 		}
 		if (obj.y > canvas.height + (maxDist / 2)) {
 			obj.y = -(maxDist / 2);
-		}
-		else if (obj.y < -(maxDist / 2)) {
+		} else if (obj.y < -(maxDist / 2)) {
 			obj.y = canvas.height + (maxDist / 2);
 		}
 	}
@@ -79,3 +77,19 @@
 	//Execute when DOM has loaded
 	document.addEventListener('DOMContentLoaded', init, false);
 })();
+
+function beregnMuskelmasse() {
+	a = document.getElementById('a').value;
+	b = document.getElementById('b').value;
+
+	c = a * b * 17;
+	document.getElementById("cer").innerHTML = c + " Kg.";
+}
+
+function beregnFedtfri() {
+	a = document.getElementById('a1').value;
+	b = document.getElementById('b1').value;
+
+	c = a * b * 34;
+	document.getElementById("cer1").innerHTML = c + " Kg.";
+}
