@@ -1,6 +1,6 @@
 body {
     background: rgb(0, 21, 57);
-    background: linear-gradient(0deg, rgb(27, 27, 27) 0%, rgb(15, 15, 15) 100%);
+    background: linear-gradient(0deg, rgba(156, 31, 0, 0.822) 0%, rgba(1, 0, 63, 0.863) 100%);
     position: relative;
     overflow-x: hidden;
     font-family: 'DM Sans', sans-serif;
@@ -41,7 +41,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: -1;
+    z-index: -5;
     pointer-events: none;
 }
 
@@ -53,11 +53,11 @@ body {
     color: white;
 }
 
-h2 {
+h1 {
     font-weight: bold;
     text-align: center;
-    font-size: 40px;
-    background: linear-gradient(90deg, rgb(255, 0, 0), rgb(255, 255, 255), rgb(255, 0, 0));
+    font-size: 50px;
+    background: linear-gradient(90deg, rgb(255, 0, 0), rgb(0, 255, 221), rgb(255, 0, 0));
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -208,14 +208,16 @@ h2 {
 
 .Intro-text {
     font-family: 'DM Sans', sans-serif;
+    line-height: 170%;
 }
 
 .viden-text {
-    color: #FFFFFF
+    color: #FFFFFF;
+    line-height: 170%;
 }
 
 .text-title {
-    color: red;
+    color: turquoise
 }
 
 .icon-image {
@@ -231,6 +233,7 @@ h2 {
     display: none;
     position: fixed;
     bottom: 20px;
+    left: 48%;
     right: 50%;
     z-index: 99;
     font-size: 100px;
@@ -242,13 +245,16 @@ h2 {
     border-radius: 4px;
 
     animation: MoveUpDown 1.5s linear infinite;
-  }
-  
-  @keyframes MoveUpDown {
-    0%, 100% {
-      bottom: 0;
+}
+
+@keyframes MoveUpDown {
+
+    0%,
+    100% {
+        bottom: 0;
     }
+
     50% {
-      bottom: 30px;
+        bottom: 30px;
     }
-  }
+}

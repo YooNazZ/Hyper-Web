@@ -28,8 +28,8 @@
   <nav id="navbar-example2" class="sticky-top navbar navbar-expand-lg navbar-dark bg-black ps-3 fs-5">
     <div class="container-fluid">
 
-      <a class="nav-link navbar-brand fs-2 ps-2 fw-bold" href="#Top"><img class="icon-image"
-          src="assets/images/Icon.png"><span class="hyper-text"> Hyper</span> Web</a>
+      <a class="navbar-brand fs-2 "><img class="icon-image" src="assets/images/Icon.png"></a>
+      <a class="nav-link navbar-brand fs-2 ps-1 fw-bold" href="#Top"><span class="hyper-text"> Hyper</span> Web</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -92,26 +92,21 @@
     <li></li>
     <li></li>
     <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
+
   </ul>
   <!--Lightrope End-->
 
   <br>
   <div class="container-fluid">
-    <h2 class="text-center text-light pt-4 fw-bold"><span class="hyper-text">Hyper</span><span class="web-text">
-        Web</span></h2>
+    <h1 class="text-light pt-4 fw-bold"><span class="hyper-text">Hyper</span><span class="web-text">
+        Web</span></h1>
 
     <div class="row justify-content-center">
       <div class="col-sm-4">
-        <p class="Intro-text text-white pt-2 text-center">Velkommen til Hyper Web. Hyper Web er et site omhandlende
+        <p class="Intro-text text-white pt-2 fs-5 text-center">Velkommen til Hyper Web. Hyper Web er et site omhandlende
           opbygning af
           muskelmasse.
-          Siden består af, viden omkring opbygning af muskler samt en muskelmasse beregner.Du kan navigere
+          Siden består af, viden omkring opbygning af muskler samt en muskelmasse beregner. Du kan navigere
           rundt på siden ved brug af navigations-baren.</p>
       </div>
     </div>
@@ -124,8 +119,8 @@
     <br>
     <br>
     <div class="Products ps-3 col-sm-5">
-      <h3 class="text-title fw-bold">Viden om muskelmasse</h3>
-      <p class="viden-text">
+      <h3 class="text-title fw-bold fs-2">Viden om muskelmasse</h3>
+      <p class="viden-text fs-5">
         For at bygge muskelmasse kræver det først og fremmest at man ligger i kalorie overskud,
         det vil sige man spiser mere end man forbrænder.
         Dit ligevægtsindtag er det antal kalorier du skal spise dagligt for at beholde din vægt,
@@ -180,17 +175,25 @@
     <br>
 
 
-    <h3 class="text-title fw-bold">Beregnere</h3>
-    <div class="row">
+    <h3 class="text-title fw-bold fs-2 ps-3">Beregnere</h3>
+      <p class="viden-text fs-5 ps-3">Her kan du beregne din maksimalt opnåelige muskelmasse samt maksimalt fedtfrie masse.
+<br>
+Din maksimale muskelmasse bliver udregnet ved regnestykket (din Vægt x din vægt x 17).
+<br>
+Din maksimale fedtfri masse bliver udregnet ved regnestykket (din vægt x din vægt x 34).
+
+    </p>
+    <div class="row fs-5 ps-3">
       <div class="col-sm-2">
-        <div class="AboutUs ps-3 card bg-black" style="width: 18rem; height: 16rem">
+        <div class="AboutUs ps-3 card bg-black" style="width: 18rem; height: 23rem">
           <h4 class="beregner-title fw-bold pt-3">Muskelmasse</h4>
           <p class="viden-text">Her kan du beregne din maksimale muskelmasse.
           </p>
 
           <div class="text-light">
-            Højde i m. <input type="number" id="a"><br>
-            Højde i m. <input type="number" id="b"><br><br>
+            Højde i m. <input type="number" id="a">
+            <br>
+            <br>
             <button onclick="beregnMuskelmasse()">Beregn</button>
             <p id="cer"></p>
           </div>
@@ -198,16 +201,16 @@
       </div>
 
 
-
       <div class="col-sm-1">
-        <div class="AboutUs ps-3 card bg-black" style="width: 18rem; height: 16rem">
+        <div class="AboutUs ps-3 card bg-black" style="width: 18rem; height: 23rem">
           <h4 class="beregner-title fw-bold pt-3">Fedtfri masse</h4>
           <p class="viden-text">Her kan du beregne din maksimale fedtfri masse.
           </p>
 
           <div class="text-light">
-            Højde i m. <input type="number" id="a1"><br>
-            Højde i m. <input type="number" id="b1"><br><br>
+            Højde i m. <input type="number" id="a1">
+            <br>
+            <br>
             <button onclick="beregnFedtfri()">Beregn</button>
             <p id="cer1"></p>
           </div>
@@ -248,7 +251,7 @@
     <br>
 
     <div class="Contact ps-3">
-      <h3 class="text-light fw-bold">Kontakt</h3>
+      <h3 class="text-title fw-bold fs-2">Kontakt</h3>
 
       <div class="card" style="width: 18rem;">
         <img src="Assets/images/me3.jpg" class="card-img-top" alt="...">
@@ -266,15 +269,11 @@
               href="https://www.linkedin.com/in/jonas-%C3%B8rndrup-742b3621b/" class="card-link">LindedIn</a></li>
         </ul>
         <div class="card-body">
-
-
         </div>
       </div>
 
     </div>
 
-    <br>
-    <br>
     <br>
 
   </div>

@@ -2,7 +2,7 @@
 
 	var canvas, ctx;
 	var points = [];
-	var maxDist = 100;
+	var maxDist = 3000;
 
 	function init() {
 		//Add on load scripts
@@ -80,19 +80,19 @@
 
 function beregnMuskelmasse() {
 	a = document.getElementById('a').value;
-	b = document.getElementById('b').value;
 
-	c = a * b * 17;
-	document.getElementById("cer").innerHTML = c + " Kg.";
+	c = a * a * 17;
+	total = c.toFixed(2);
+	document.getElementById("cer").innerHTML = total + " Kg.";
 	
 }
 
 function beregnFedtfri() {
 	a = document.getElementById('a1').value;
-	b = document.getElementById('b1').value;
 
-	c = a * b * 34;
-	document.getElementById("cer1").innerHTML = c + " Kg.";
+	c = a * a * 34;
+	total = c.toFixed(2);
+	document.getElementById("cer1").innerHTML = total + " Kg.";
 }
 
 //Get the button
