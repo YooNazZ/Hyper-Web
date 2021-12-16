@@ -1,3 +1,4 @@
+// Laver Snefnug funktionen
 (function () {
 
 	var canvas, ctx;
@@ -13,7 +14,8 @@
 		setInterval(pointFun, 20);
 		window.addEventListener('resize', resizeCanvas, false);
 	}
-	//Particle constructor
+
+	//Konstruere partiklerne
 	function point() {
 		this.x = Math.random() * (canvas.width + maxDist) - (maxDist / 2);
 		this.y = Math.random() * (canvas.height + maxDist) - (maxDist / 2);
@@ -24,15 +26,15 @@
 		this.dia = ((Math.random() * 2.5) + 1.5) * this.z;
 		points.push(this);
 	}
-	//Point generator
+	//Konstruere spawn generator
 	function generatePoints(amount) {
 		var temp;
 		for (var i = 0; i < amount; i++) {
 			temp = new point();
 		};
-		// console.log(points);
 	}
-	//Point drawer
+
+	//Farver sneen
 	function draw(obj) {
 		ctx.beginPath();
 		ctx.strokeStyle = "transparent";
@@ -42,7 +44,7 @@
 		ctx.stroke();
 		ctx.fill();
 	}
-	//Updates point position values
+	//Generere bevægelses banen for snefnug
 	function update(obj) {
 		obj.x += obj.vx;
 		obj.y += obj.vy;
@@ -57,7 +59,8 @@
 			obj.y = canvas.height + (maxDist / 2);
 		}
 	}
-	//
+	
+	// Ved det ikke
 	function pointFun() {
 		ctx.clearRect(0, 0, canvas.width, canvas.height);
 		for (var i = 0; i < points.length; i++) {
@@ -78,15 +81,18 @@
 	document.addEventListener('DOMContentLoaded', init, false);
 })();
 
+//Beregner Muskelmasse Start
 function beregnMuskelmasse() {
 	a = document.getElementById('a').value;
 
 	c = a * a * 17;
 	total = c.toFixed(2);
 	document.getElementById("cer").innerHTML = total + " Kg.";
-	
-}
 
+}
+//Beregner Muskelmasse - END
+
+//Beregner Fedtfri masse - Start
 function beregnFedtfri() {
 	a = document.getElementById('a1').value;
 
@@ -94,23 +100,26 @@ function beregnFedtfri() {
 	total = c.toFixed(2);
 	document.getElementById("cer1").innerHTML = total + " Kg.";
 }
+//Beregner Fedtfri masse - END
 
-//Get the button
+//Lav knap Funktionen
 var mybutton = document.getElementById("myBtn");
 
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+// Når brugeren scroller 20px ned fra toppen, så skal knappen vises
+window.onscroll = function () {
+	scrollFunction()
+};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
+	if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+		mybutton.style.display = "block";
+	} else {
+		mybutton.style.display = "none";
+	}
 }
 
-// When the user clicks on the button, scroll to the top of the document
+// Når brugeren klikker på knappen = Scroll til toppen af siden
 function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
+	document.body.scrollTop = 0;
+	document.documentElement.scrollTop = 0;
 }

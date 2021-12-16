@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!--Headeren indeholder metadata omkring siden, det er f.eks. title, scripts og stylesheets. 
+    Metadata indeholder information til maskiner og ikke til mennesker-->
+
 <head>
-  <!--Linking Pages Start-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
@@ -13,16 +15,20 @@
   <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="assets/css/fontawesome.css">
   <link rel="stylesheet" type="text/css" href="assets/css/stylesheet.css">
-  <!--Linking Pages End-->
 
   <!--Title Start-->
   <title>Hyper Web</title>
   <!--Title End-->
 </head>
 
+<!--Body tagget definere det indhold der vises på selveste hjemmesiden.
+Alt det data der står i body vil blive vist på din hjemmeside-->
+
 <body>
 
+  <!--Snow START-->
   <canvas class="snow" id="snow" width="1848" height="515"></canvas>
+  <!--Snow END-->
 
   <!--Navbar Start-->
   <nav id="navbar-example2" class="sticky-top navbar navbar-expand-lg navbar-dark bg-black ps-3 fs-5">
@@ -92,11 +98,12 @@
     <li></li>
     <li></li>
     <li></li>
-
   </ul>
   <!--Lightrope End-->
 
   <br>
+
+  <!--Headtitle + Intro START-->
   <div class="container-fluid">
     <h1 class="text-light pt-4 fw-bold"><span class="hyper-text">Hyper</span><span class="web-text">
         Web</span></h1>
@@ -110,14 +117,20 @@
           rundt på siden ved brug af navigations-baren.</p>
       </div>
     </div>
+    <!--Headtitle + Intro END-->
 
+    <!--Animated Arrow START-->
     <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-angle-up"></i></button>
+    <!--Animated Arrow END-->
 
     <br id="Products">
     <br>
     <br>
     <br>
     <br>
+    <!---->
+
+    <!--Viden START-->
     <div class="Products ps-3 col-sm-5">
       <h3 class="text-title fw-bold fs-2">Viden om muskelmasse</h3>
       <h4 class="viden-text fw-bold">Kalorier</h4>
@@ -144,17 +157,22 @@
         Husk! Man kan ikke bygge et hus uden mursten, det samme gælder for muskler, man kan ikke bygge muskler uden
         proteiner og energi overskud.
       </p>
-
-
     </div>
+    <!--Viden End-->
 
+    <!--Image START-->
     <img class="ps-3 img-fluid" src="https://i.ytimg.com/vi/8fzh-gKZhaw/maxresdefault.jpg" alt="">
-    <p class="viden-text fs-5 ps-3">Kilde: <a target="_blank" href=" https://www.youtube.com/watch?v=8fzh-gKZhaw&ab_channel=FOCHBY">https://www.youtube.com/watch?v=8fzh-gKZhaw&ab_channel=FOCHBY</a></p>
+    <p class="viden-text fs-5 ps-3">Kilde: <a target="_blank"
+        href=" https://www.youtube.com/watch?v=8fzh-gKZhaw&ab_channel=FOCHBY">https://www.youtube.com/watch?v=8fzh-gKZhaw&ab_channel=FOCHBY</a>
+    </p>
     <br>
     <br id="AboutUs">
     <br>
     <br>
     <br>
+    <!--Image END-->
+
+    <!--Beregner START-->
     <h3 class="text-title fw-bold fs-2 ps-3 pt-3">Beregnere</h3>
     <p class="viden-text fs-5 ps-3">Her kan du beregne din maksimalt opnåelige muskelmasse samt maksimalt fedtfrie
       masse.
@@ -198,7 +216,7 @@
         </div>
       </div>
     </div>
-
+    <!--Beregner END-->
 
 
 
@@ -209,6 +227,7 @@
     <br>
     <br>
 
+    <!--Contact Card START-->
     <div class="Contact ps-3">
       <h3 class="text-title fw-bold fs-2">Kontakt</h3>
 
@@ -230,23 +249,23 @@
         <div class="card-body">
         </div>
       </div>
-
     </div>
+    <!--Contact Card END-->
 
     <br>
-
   </div>
-  <!-- Footer Start -->
+
+  <!-- Her starter jeg footeren som er den bar der er i bunden af min hjemmeside-->
   <footer class="bg-dark text-center text-lg-start">
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2); color: white;">
       © 2020 Copyright:
       <a style="color: red;" href="Index.html">HyperWeb.com</a>
     </div>
   </footer>
-  <!-- Footer End -->
+  <!-- Footer END -->
 
 
-
+  <!--Scripts START-->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
     integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
@@ -256,7 +275,7 @@
   </script>
   <script src="assets/js/java.js"></script>
   <script src="https://kit.fontawesome.com/99d3ff8338.js" crossorigin="anonymous"></script>
-
+  <!--Script END-->
 </body>
 
 </html>
